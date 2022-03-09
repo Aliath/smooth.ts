@@ -27,7 +27,7 @@ npm install --save smooth.ts
 ## Usage
 
 ```ts
-import Smooth from 'smooth.ts';
+import { Smooth } from 'smooth.ts';
 
 const smoother = Smooth([2, 1, 3, 7]);
 
