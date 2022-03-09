@@ -25,7 +25,7 @@ declare module 'smooth.ts' {
     cubicTension?: 0; // available tensions has the same value, shrugs
   }
 
-  function Smooth<T = ValueType>(points: T[], config?: Config): (segment: number) => T;
+  export function Smooth<T = ValueType>(points: T[], config?: Config): (segment: number) => T;
 
   // @ts-ignore
   Smooth.METHOD_CUBIC = Methods.METHOD_CUBIC;
@@ -41,6 +41,4 @@ declare module 'smooth.ts' {
 
   Smooth.CUBIC_TENSION_DEFAULT = 0 as const;
   Smooth.CUBIC_TENSION_CATMULL_ROM = 0 as const;
-
-  export default Smooth;
 }
