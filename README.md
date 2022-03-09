@@ -7,6 +7,10 @@ A new age typescript binding for [smooth.js](https://github.com/osuushi/Smooth.j
 
 Smooth.js is a super lightweight library that allows doing interpolations very performant way. It's slightly different than the other libraries because result curve goes through input points. The only problem is that this library has more than 10 years and has really poor bindings for technologies used in 2022.
 
+## Demo
+
+Link to demo available [here](https://codepen.io/aliath/pen/WNXBzPw)
+
 ## Solution
 
 I've taken result JS library (version: 0.1.6) and created bindings for it what makes usage of it much easier.

@@ -19,10 +19,14 @@ declare module 'smooth.ts' {
   type Clip = typeof Clips[keyof typeof Clips];
 
   type ValueType = number | number[];
+
   interface Config {
     method?: Method;
+    cubicTension?: 0;
     clip?: Clip;
-    cubicTension?: 0; // available tensions has the same value, shrugs
+    syncFilterSize?: number;
+    sincWindow: (input: ValueType) => ValueType;
+    scaleTo?: number;
   }
 
   export function Smooth<T = ValueType>(points: T[], config?: Config): (segment: number) => T;
@@ -41,4 +45,6 @@ declare module 'smooth.ts' {
 
   Smooth.CUBIC_TENSION_DEFAULT = 0 as const;
   Smooth.CUBIC_TENSION_CATMULL_ROM = 0 as const;
+
+  Smooth.deepValidation = Boolean(true);
 }
