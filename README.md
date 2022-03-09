@@ -31,7 +31,7 @@ import Smooth from 'smooth.ts';
 
 const smoother = Smooth([2, 1, 3, 7]);
 
-// take interpolation between <0; 1> in half segment
+// take interpolation between 0th and 1st point in half segment
 smoother(0.5); // 1.375
 ```
 
