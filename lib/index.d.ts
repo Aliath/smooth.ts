@@ -25,7 +25,7 @@ declare module 'smooth.ts' {
     cubicTension?: 0;
     clip?: Clip;
     syncFilterSize?: number;
-    sincWindow: (input: ValueType) => ValueType;
+    sincWindow?: (input: ValueType) => ValueType;
     scaleTo?: number;
   }
 
