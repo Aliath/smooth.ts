@@ -1,7 +1,6 @@
 name: Publish package on npm
 
 on: push
-  branch: master
 
 jobs:
   publish:

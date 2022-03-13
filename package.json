@@ -1,8 +1,15 @@
 {
   "name": "smooth.ts",
   "description": "A new age typescript binding for smooth.js",
-  "keywords": ["smooth.js", "smooth js", "smooth ts", "smooth curve", "interpolation", "2d interpolation"],
-  "version": "0.0.5",
+  "keywords": [
+    "smooth.js",
+    "smooth js",
+    "smooth ts",
+    "smooth curve",
+    "interpolation",
+    "2d interpolation"
+  ],
+  "version": "0.0.6",
   "main": "lib/index.js",
   "types": "./lib/index.d.ts",
   "license": "MIT",
