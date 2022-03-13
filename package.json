@@ -1,7 +1,14 @@
 {
   "name": "smooth.ts",
-  "version": "0.0.4",
+  "description": "A new age typescript binding for smooth.js",
+  "keywords": ["smooth.js", "smooth js", "smooth ts", "smooth curve", "interpolation", "2d interpolation"],
+  "version": "0.0.5",
   "main": "lib/index.js",
   "types": "./lib/index.d.ts",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Aliath/smooth.ts.git"
+  },
+  "homepage": "https://github.com/Aliath/smooth.ts"
 }

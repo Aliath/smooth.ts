@@ -1,6 +1,6 @@
 # Smooth.ts
 
-A new age typescript binding for [smooth.js](https://github.com/osuushi/Smooth.js/) used under MIT license.
+A new age typescript bindings for [smooth.js](https://github.com/osuushi/Smooth.js/) used under MIT license.
 
 
 ## Motivation
@@ -35,8 +35,19 @@ import { Smooth } from 'smooth.ts';
 
 const smoother = Smooth([2, 1, 3, 7]);
 
-// take interpolation between 0th and 1st point in half segment
+// take interpolation between 0th and 1st element at half of segment
 smoother(0.5); // 1.375
+```
+
+Works also for 2d data:
+```ts
+import { Smooth } from 'smooth.ts';
+
+const points = [[10, 15], [32, 40], [1, 0]];
+const pointsSmoother = Smooth(points);
+
+// take interpolation between 0th and 1st point at half of segment
+pointsSmoother(0.5); // [22.9375, 30]
 ```
 
 ## License
